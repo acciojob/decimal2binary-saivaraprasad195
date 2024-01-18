@@ -3,7 +3,7 @@ function decimalToBinary(num) {
 	let bin =0;
 	while(num>0){
 		bin += (Math.floor(num%2)).toString();
-		num/=2; 
+		num=Math.floor(num/2); 
 	}
 	return bin;
 }
