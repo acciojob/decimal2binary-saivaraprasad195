@@ -5,8 +5,7 @@ function decimalToBinary(num) {
 		bin += (Math.floor(num%2)).toString();
 		num=Math.floor(num/2); 
 	}
-	bin = bin+"0"
-	return bin;
+	return bin === "" ? "0" : bin.padStart(4, '0');
 }
 
 window.decimalToBinary = decimalToBinary;
